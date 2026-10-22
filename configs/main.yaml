@@ -1,0 +1,171 @@
+model_name: lpaa_crossattn_pfsa
+clip_model_name: openai/clip-vit-base-patch16
+adapter_layers:
+- 3
+- 6
+- 9
+- 12
+evidence_layers:
+- 3
+- 6
+- 9
+query_layer: 12
+adapter_bottleneck: 64
+cross_attn_heads: 8
+dropout: 0.1
+lambda_weights:
+  3: 0.2
+  6: 0.2
+  9: 0.2
+  12: 1.0
+beta: 1.0
+temperature: 0.07
+dataset_type: lpaa_herl
+all_dataset:
+- FaceForensics++
+train_dataset:
+- FaceForensics++
+test_dataset:
+- Celeb-DF-v1
+- Celeb-DF-v2
+- DFDCP
+- DFDC
+- UADFV
+compression: c23
+pfig_desc_dir: ./data/text/original
+train_batchSize: 32
+test_batchSize: 32
+workers: 0
+frame_num:
+  train: 32
+  test: 32
+resolution: 224
+nEpochs: 10
+start_epoch: 0
+save_epoch: 5
+rec_iter: 100
+manualSeed: 1024
+with_mask: false
+with_landmark: false
+use_data_augmentation: true
+data_aug:
+  flip_prob: 0.5
+  rotate_prob: 0.5
+  rotate_limit:
+  - -10
+  - 10
+  blur_prob: 0.3
+  blur_limit:
+  - 3
+  - 7
+  brightness_prob: 0.5
+  brightness_limit:
+  - -0.1
+  - 0.1
+  contrast_limit:
+  - -0.1
+  - 0.1
+  quality_lower: 40
+  quality_upper: 100
+mean:
+- 0.48145466
+- 0.4578275
+- 0.40821073
+std:
+- 0.26862954
+- 0.26130258
+- 0.27577711
+optimizer:
+  type: adam
+  adam:
+    lr: 0.0001
+    beta1: 0.9
+    beta2: 0.999
+    eps: 1.0e-08
+    weight_decay: 0.0001
+    amsgrad: false
+lr_scheduler: cosine
+lr_T_max: 20
+lr_eta_min: 1.0e-06
+loss_func: cross_entropy
+metric_scoring: auc
+cuda: true
+cudnn: true
+lmdb: true
+lmdb_dir: ./data/lmdb
+dataset_json_folder: ./data/metadata
+rgb_dir: ./data/rgb
+log_dir: ./outputs/training
+save_ckpt: true
+save_feat: false
+mode: train
+dry_run: false
+SWA: false
+save_avg: true
+label_dict:
+  FF-real: 0
+  FF-DF: 1
+  FF-F2F: 1
+  FF-FS: 1
+  FF-NT: 1
+  FF-FH: 1
+  FF-SH: 1
+  real: 0
+  fake: 1
+  CelebDFv1_real: 0
+  CelebDFv1_fake: 1
+  CelebDFv2_real: 0
+  CelebDFv2_fake: 1
+  DFDCP_Real: 0
+  DFDCP_FakeA: 1
+  DFDCP_FakeB: 1
+  DFDC_Fake: 1
+  DFDC_Real: 0
+  UADFV_Fake: 1
+  UADFV_Real: 0
+use_progressive_lambda: true
+progressive_lambda_schedule:
+- until: 0.25
+  weights:
+    3: 1.0
+    6: 0.3
+    9: 0.2
+    12: 0.1
+- until: 0.5
+  weights:
+    3: 0.5
+    6: 1.0
+    9: 0.4
+    12: 0.2
+- until: 0.75
+  weights:
+    3: 0.3
+    6: 0.5
+    9: 1.0
+    12: 0.5
+- until: 1.0
+  weights:
+    3: 0.2
+    6: 0.3
+    9: 0.5
+    12: 1.2
+use_sbi_pfig: false
+hybrid_sbi_dataset_dir: ./data/sbi
+hybrid_sbi_desc_path: ./data/text/sbi/descriptions.json
+hybrid_epoch_size: 0
+hybrid_seed: 1024
+herl_weight: 0.2
+herl_margin_positive_hard: 0.05
+herl_margin_hard_negative: 0.1
+herl_hard_negative_weight: 1.0
+clip_warmup_epochs: 1
+clip_learning_rate: 1.0e-05
+adapter_learning_rate: 0.0001
+herl_use_ph: false
+herl_use_hn: true
+pfsa_weight: 0.05
+pfsa_margin_mono: 0.03
+pfsa_start_epoch: 1
+pfsa_warmup_epochs: 2
+pfsa_fake_only: true
+task_target: hvtl_main

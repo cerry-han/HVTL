@@ -1,0 +1,9 @@
+{
+  "dataset_json_folder": "./data/metadata",
+  "lmdb_dir": "./data/lmdb",
+  "rgb_dir": "./data/rgb",
+  "pfig_desc_dir": "./data/text/original",
+  "hybrid_sbi_dataset_dir": "./data/sbi",
+  "hybrid_sbi_desc_path": "./data/text/sbi/descriptions.json",
+  "log_dir": "./outputs/training"
+}

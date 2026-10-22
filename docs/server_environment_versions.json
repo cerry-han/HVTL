@@ -1,0 +1,18 @@
+{
+  "torch": "2.4.1+cu118",
+  "torchvision": "0.19.1+cu118",
+  "transformers": "4.46.3",
+  "numpy": "1.24.4",
+  "scipy": "1.10.1",
+  "scikit-learn": "1.3.2",
+  "opencv-python": "4.13.0.92",
+  "Pillow": "10.4.0",
+  "lmdb": "1.7.5",
+  "PyYAML": "6.0.3",
+  "albumentations": "1.4.18",
+  "timm": null,
+  "kornia": "0.7.3",
+  "dlib": "19.24.6",
+  "scikit-image": "0.21.0",
+  "tensorboard": "2.14.0"
+}

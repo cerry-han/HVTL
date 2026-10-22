@@ -1,0 +1,210 @@
+[
+  {
+    "path": "training/detectors/lpaa_detector.py",
+    "sha256": "de677952000967e2a99e04df97368da5edd4e39c923f6122fcbbf61c336cdc08",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/detectors/lpaa_crossattn_detector.py",
+    "sha256": "b1efc4ba8737b645b99d866aa5faeaecc7132c771c1175c2a90c2f7ddeb71a4f",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/detectors/lpaa_crossattn_herl_detector.py",
+    "sha256": "cd6f18ef2028c49da853688d3e8c65d84e1d341bdc6af2c6d999ae50512bb9cc",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/detectors/lpaa_crossattn_pfsa_detector.py",
+    "sha256": "4b52493fa286d3df2f83c49398067fb4d545670ca5b6b65ad202976d88f03d24",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/detectors/lpaa_crossattn_pfsa_spec_detector.py",
+    "sha256": "400d50c3e12f96f7e53fd9fff23a13f7c6dfbdca2920cf248516a64fa9282a95",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/detectors/lpaa_crossattn_pfsa_full_detector.py",
+    "sha256": "f1f3279840f62e3b980f893b4d09d89f6e98b3fce04ea8327c7a1e02f3f8d85f",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/detectors/lpaa_crossattn_pfsa_lambda_ablation_detector.py",
+    "sha256": "0f38736d9a2e8b97c7fee542afd50b414c13ef33af957c5e3542898227dfc6c5",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/detectors/lpaa_crossattn_pfsa_l14_detector.py",
+    "sha256": "c38344462981fd4d7d500beccff76a61a5e84bfd76c7b4055dddbb6853b9a7f3",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "experiments/mapping.py",
+    "sha256": "f8a3ff5eb33530e920112fac321b84b049f58f5e032bfdfa297a24097c2f8832",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "data_tools/lpaa_sbi_split_guard.py",
+    "sha256": "13ada143cd96f1a900a99c336862fef1cf47f0f02d97bcfc7fe1a96cb142e489",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "evaluation/video_eval_metrics.py",
+    "sha256": "76762a2cedd4aaca6ee469b94a633ac6bafbe2c7d8f2e0e3b41ae5615fcd6823",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/detectors/base_detector.py",
+    "sha256": "45bd507c5bac3a7e78991420fe7b829c45e6413694cbe907f255cee76bcf9085",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/logger.py",
+    "sha256": "dd2f0040b6ac8a845aca0d063b12238ea9ea48386470f92b8cb15df6a2aa857f",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/dataset/__init__.py",
+    "sha256": "1629d468ae993d79b8031de4df4b3331e3d227baf7ea6d189e8182300e86951a",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/dataset/abstract_dataset.py",
+    "sha256": "7614ea76da645bd233245bdda8587faaf334f40ade370d2dc94bb7634a709fac",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/dataset/albu.py",
+    "sha256": "53629f75cce5c77656bb17c163f0692610d1aafb6e9431dfb8ec6393d99a92d0",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/dataset/lpaa_dataset.py",
+    "sha256": "079c7d8c49d6ccd80cf478293a0fffb189dc8a9f9d45250d01f073306ad951cd",
+    "status": "release portability edit; upstream hash retained",
+    "upstream_sha256": "b394aaa78879be05e046ce22b0d065d4292bc306490c37b2081850bb6b2cea3f"
+  },
+  {
+    "path": "training/dataset/lpaa_herl_dataset.py",
+    "sha256": "82688463f4ebd1dd8bbfec51e0797bbb45e2c39c58b75aa80bb332e3a34f1470",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/dataset/lpaa_hybrid_text_dataset.py",
+    "sha256": "d583e16edb3757288e9fdb67b95e3ca7266f84a55362e189fc288918df0888e9",
+    "status": "release portability edit; upstream hash retained",
+    "upstream_sha256": "45986eb4d6ba721cf2f8cbf53ae23fc616de31b028c2f05141fa40aa26cffa70"
+  },
+  {
+    "path": "training/dataset/lpaa_sbi_split_guard.py",
+    "sha256": "13ada143cd96f1a900a99c336862fef1cf47f0f02d97bcfc7fe1a96cb142e489",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/metrics/__init__.py",
+    "sha256": "1e3b05057fbef99b10e6b271679ac220b763ccd2e0b14c44debb468f22a0833c",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/metrics/base_metrics_class.py",
+    "sha256": "a8db36521bd1b4ffcb42f92e331a0e683035a0d659c0ff68704863745b458268",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/metrics/registry.py",
+    "sha256": "fa2f82246dfe39e49076096fe4db8f1b6cd6a2f553a5e3ba78a72d815007b76f",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/metrics/utils.py",
+    "sha256": "053318418d77a41e247e157ed5aef2caf65c16861fe3ba69373bd54575386997",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/optimizor/__init__.py",
+    "sha256": "1e3b05057fbef99b10e6b271679ac220b763ccd2e0b14c44debb468f22a0833c",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/optimizor/LinearLR.py",
+    "sha256": "25c2e8a206f55cb2b19beaf969911ddec7d7bde42f534d9c350b2ee78fafc212",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/optimizor/SAM.py",
+    "sha256": "ae8f749182518d5d0a2b43de7011e37ec28116268d4782fb50e3764ad2bc520a",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/trainer/__init__.py",
+    "sha256": "550975229881c601d9baabc4228ed09e0f615d3979e71f7fd8dd07a57db63ba3",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/trainer/base_trainer.py",
+    "sha256": "3434de6d2e5c2314567c029bbf2fe03a54c06092e7f2f69abaf93f74a61a72b0",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/trainer/trainer.py",
+    "sha256": "313347b8fd467140d25ddfc1c935d721504a302f5874a3a83c1233b06a52fdcc",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/loss/abstract_loss_func.py",
+    "sha256": "03173af6a19e61c8461956d23889aa95e05aa05a87f070bca366de8bcd2e0b00",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "training/loss/cross_entropy_loss.py",
+    "sha256": "50e7c5e52ccaa07d7d2777ca0ad6333a4e8b3ebe0eec2d9c2926539f03e8095b",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "licenses/DeepFakeBench-LICENSE",
+    "sha256": "44ac394fae2ed10bbbe021936425043e6b7bc9f91014d42f3dd9f1c0803d31d1",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "docs/server_environment_versions.json",
+    "sha256": "37d6318d81b7ad95fe4a86574ac1413faf7f1759e7e604e268f3af2a2d1dcd52",
+    "status": "server snapshot hash verified"
+  },
+  {
+    "path": "configs/empty_defaults.yaml",
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "status": "release entry/configuration; see RELEASE_USAGE.md"
+  },
+  {
+    "path": "configs/main.yaml",
+    "sha256": "c5f66b67adadcea1feadd1741322ca0b51fe101b0b5efc6504d2b1205e7babad",
+    "status": "release entry/configuration; see RELEASE_USAGE.md"
+  },
+  {
+    "path": "evaluation/evaluate.py",
+    "sha256": "26df9bf79b25d3b4b217c0dc80a797d46f5b38fdab7dab5bfcc139530cfdc3e9",
+    "status": "release entry/configuration; see RELEASE_USAGE.md"
+  },
+  {
+    "path": "run.py",
+    "sha256": "b80cf4dd8b915c1a6df5ad70145d83bc06ffa8b5ede344877c90f0c7dc3cdf5a",
+    "status": "release portability edit; upstream hash retained",
+    "upstream_sha256": "32034cd2ce1114f07c015b6932f1f17b80936aefd9836b33293e3c36df7c4027"
+  },
+  {
+    "path": "training/detectors/__init__.py",
+    "sha256": "327170c747311baf0f2354739575843068f3bce0457149657dda00e1c1caec28",
+    "status": "release entry/configuration; see RELEASE_USAGE.md"
+  },
+  {
+    "path": "training/loss/__init__.py",
+    "sha256": "b201def167de5d821950614c3a19f561252f5ee35cc413e89c19b0faf7699a64",
+    "status": "release entry/configuration; see RELEASE_USAGE.md"
+  },
+  {
+    "path": "training/train.py",
+    "sha256": "02a751b6f55cf71e67629324c8eafb38e20b5306a9bd23bcecef8e6a70944ad9",
+    "status": "release entry/configuration; see RELEASE_USAGE.md"
+  }
+]

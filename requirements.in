@@ -1,0 +1,15 @@
+# Direct runtime dependencies, NOT a validated clean-environment lock file.
+# Observed server versions are recorded in docs/server_environment_versions.json.
+torch
+torchvision
+transformers
+numpy
+scipy
+scikit-learn
+opencv-python
+Pillow
+lmdb
+PyYAML
+albumentations
+tensorboard
+tqdm

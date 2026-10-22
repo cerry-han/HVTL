@@ -1,0 +1,10 @@
+"""Register only the released HVTL detector family."""
+from metrics.registry import DETECTOR
+from .lpaa_detector import LPAADetector
+from .lpaa_crossattn_detector import LPAACrossAttnDetector
+from .lpaa_crossattn_herl_detector import LPAACrossAttnHERLDetector
+from .lpaa_crossattn_pfsa_detector import LPAACrossAttnPFSADetector
+from .lpaa_crossattn_pfsa_spec_detector import LPAACrossAttnPFSASpecDetector
+from .lpaa_crossattn_pfsa_full_detector import LPAACrossAttnPFSAFullDetector
+from .lpaa_crossattn_pfsa_lambda_ablation_detector import LPAACrossAttnPFSALambdaAblationDetector
+from .lpaa_crossattn_pfsa_l14_detector import LPAACrossAttnPFSAL14Detector

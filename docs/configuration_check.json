@@ -1,0 +1,16 @@
+{
+  "main_configuration_equivalent_except": [
+    "dataset_json_folder",
+    "hybrid_sbi_dataset_dir",
+    "hybrid_sbi_desc_path",
+    "lmdb_dir",
+    "log_dir",
+    "pfig_desc_dir",
+    "rgb_dir",
+    "task_target"
+  ],
+  "training_hyperparameters_unchanged": true,
+  "gpu_test_passed": false,
+  "clean_environment_test_passed": false,
+  "status": "private candidate, not a validated public release"
+}
