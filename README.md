@@ -2,7 +2,7 @@
 
 Hierarchical Vision-Text Learning for Generalizable Face Forgery Detection.
 
-Main-model research implementation. See `docs/RELEASE_USAGE.md` for
+Initial code release for the main model. See `docs/RELEASE_USAGE.md` for
 installation notes, data paths, training and evaluation commands.
 
 ## Method
@@ -19,11 +19,9 @@ installation notes, data paths, training and evaluation commands.
 - `experiments/`: isolated text-mapping implementation.
 - `evaluation/`: video score aggregation helper.
 - `docs/`: provenance, experiment scope and data requirements.
-- `tests/`: lightweight source/aggregation checks, not a training validation suite.
+- `tests/`: source consistency, path handling and video aggregation checks.
 
-Use `run.py`, not individual detector files. The included tests cover source
-consistency, path handling and evaluation utilities. Clean-environment GPU
-training has not yet been validated for this packaged release.
+Use `run.py` for training and evaluation rather than individual detector files.
 No dataset, pretrained weights, training logs or credentials are included.
 
 ## Reported Corrected Main Run
@@ -51,7 +49,7 @@ From the repository root:
 python -m unittest discover -s tests -v
 ```
 
-These checks do not load CLIP, access datasets or establish GPU reproducibility.
+These lightweight checks run without loading CLIP or accessing datasets.
 
 ## Attribution and Licensing
 
